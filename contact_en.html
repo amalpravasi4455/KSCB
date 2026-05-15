@@ -36,86 +36,138 @@
 
         <section class="contact-section">
             <div class="container">
-                <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px;">
+                <div class="contact-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: start;">
+                    <!-- Left Column: Contact Info -->
                     <div class="contact-info">
-                        <h2>Get in Touch</h2>
-                        <p style="margin-bottom: 30px;">Have any questions about our services or membership? Contact us
-                            today.</p>
-                        <div class="info-item" style="display: flex; gap: 20px; margin-bottom: 25px;">
-                            <i class="fas fa-map-marker-alt"
-                                style="color: var(--primary-color); font-size: 1.5rem;"></i>
-                            <div>
-                                <div style="flex: 1;">
-                                    <strong>Main Branch</strong>
-                                    <p style="margin-bottom: 5px;">koduvazhannoor P.O.</p>
-                                    <p style="margin-bottom: 5px;"><a href="tel:04752304233">Ph: 0475-2304233</a></p>
-                                    <p><a href="tel:8078310645">Mob: 8078310645</a></p>
-                                </div>
-                                <div style="flex: 1; padding-left: 15px; border-left: 2px solid var(--gray-light);">
-                                    <strong>Branch</strong>
-                                    <p style="margin-bottom: 5px;">Karukone</p>
-                                    <p style="margin-bottom: 5px;"><a href="tel:04752271710">Ph: 0475-2271710</a></p>
-                                    <p><a href="tel:8078781803">Mob: 8078781803</a></p>
+                        <div style="margin-bottom: 40px;">
+                            <h2 style="color: var(--primary-dark); font-size: 2.2rem; margin-bottom: 15px;">Get in Touch
+                            </h2>
+                            <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">Have any questions about our
+                                services or membership? Contact us today.</p>
+                        </div>
+
+                        <!-- Branches Grid -->
+                        <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px;">
+                            <!-- Head Office Card -->
+                            <div
+                                style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--primary-color);">
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <i class="fas fa-building"
+                                        style="color: var(--primary-color); font-size: 1.5rem; margin-top: 5px;"></i>
+                                    <div>
+                                        <h3 style="margin: 0 0 10px 0; font-size: 1.3rem; color: #333;">Head Office
+                                            (Koduvazhannoor)</h3>
+                                        <p style="margin: 0 0 8px 0; color: #666;">Koduvazhannoor P.O., Pulimath</p>
+                                        <a href="tel:04702678201"
+                                            style="color: var(--primary-color); font-weight: bold; text-decoration: none; font-size: 1.1rem;">
+                                            <i class="fas fa-phone-alt" style="margin-right: 5px;"></i> 0470 - 2678201
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem;"></i>
-                            <div>
-                                <strong>Email & Website</strong>
-                                <p><a href="mailto:koduvazhanoorscb@gmail.com">koduvazhanoorscb@gmail.com</a></p>
-                                <p><a href="http://www.cptascb.in" target="_blank">www.cptascb.in</a></p>
+
+                            <!-- Karette Branch Card -->
+                            <div
+                                style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--primary-dark);">
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <i class="fas fa-code-branch"
+                                        style="color: var(--primary-dark); font-size: 1.5rem; margin-top: 5px;"></i>
+                                    <div>
+                                        <h3 style="margin: 0 0 10px 0; font-size: 1.3rem; color: #333;">Karette Branch
+                                        </h3>
+                                        <p style="margin: 0 0 8px 0; color: #666;">Karette, Thiruvananthapuram</p>
+                                        <a href="tel:04702836732"
+                                            style="color: var(--primary-dark); font-weight: bold; text-decoration: none; font-size: 1.1rem;">
+                                            <i class="fas fa-phone-alt" style="margin-right: 5px;"></i> 0470 - 2836732
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kattumpuram Branch Card -->
+                            <div
+                                style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--primary-color);">
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <i class="fas fa-code-branch"
+                                        style="color: var(--primary-color); font-size: 1.5rem; margin-top: 5px;"></i>
+                                    <div>
+                                        <h3 style="margin: 0 0 10px 0; font-size: 1.3rem; color: #333;">Kattumpuram
+                                            Branch</h3>
+                                        <p style="margin: 0 0 8px 0; color: #666;">Kattumpuram, Thiruvananthapuram</p>
+                                        <a href="tel:04722860123"
+                                            style="color: var(--primary-color); font-weight: bold; text-decoration: none; font-size: 1.1rem;">
+                                            <i class="fas fa-phone-alt" style="margin-right: 5px;"></i> 0472 - 2860123
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="info-item" style="display: flex; gap: 20px; margin-bottom: 25px;">
 
-                            <div class="info-item" style="display: flex; gap: 20px; margin-bottom: 25px;">
+                        <!-- Extra Info Item: Email & Timing -->
+                        <!-- <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                            <div class="info-item"
+                                style="display: flex; gap: 20px; background: #f8f9fa; padding: 20px; border-radius: 12px;">
+                                <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p style="margin: 5px 0 0 0;"><a href="mailto:koduvazhanoorscb@gmail.com"
+                                            style="color: inherit; text-decoration: none;">koduvazhanoorscb@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="info-item"
+                                style="display: flex; gap: 20px; background: #f8f9fa; padding: 20px; border-radius: 12px;">
                                 <i class="fas fa-clock" style="color: var(--primary-color); font-size: 1.5rem;"></i>
                                 <div>
                                     <strong>Working Hours</strong>
-                                    <p>Monday - Saturday: 10:00 AM - 5:00 PM</p>
-                                    <p style="font-size: 0.9rem; color: #666;">(2nd & 4th Saturday Holiday)</p>
-                                    <strong style="display: block; margin-top: 10px;">Cash Transactions</strong>
-                                    <p>10:00 AM - 2:00 PM & 2:30 PM - 4:00 PM</p>
+                                    <p style="margin: 5px 0 0 0;">Monday - Saturday: 10:00 AM - 5:00 PM</p>
+                                    <p style="font-size: 0.85rem; color: #888;">(2nd & 4th Saturday Holiday)</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="contact-form-container"
-                            style="background: white; padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                            <form id="contactForm">
-                                <div style="margin-bottom: 20px;">
-                                    <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Full
-                                        Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your Name" required
-                                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
-                                </div>
-                                <div style="margin-bottom: 20px;">
-                                    <label for="email"
-                                        style="display: block; margin-bottom: 8px; font-weight: 600;">Email
-                                        Address</label>
-                                    <input type="email" id="email" name="email" placeholder="Your Email"
-                                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
-                                </div>
-                                <div style="margin-bottom: 20px;">
-                                    <label for="phone"
-                                        style="display: block; margin-bottom: 8px; font-weight: 600;">Phone
-                                        Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required
-                                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
-                                </div>
-                                <div style="margin-bottom: 20px;">
-                                    <label for="message"
-                                        style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
-                                    <textarea id="message" name="message" placeholder="How can we help?" required
-                                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; height: 120px;"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%;">Send
-                                    Message</button>
-                            </form>
-                        </div>
+                        </div> -->
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="contact-form-container"
+                        style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 5px solid var(--primary-color);">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 25px; color: #333;">Send us a Message</h3>
+                        <form id="contactForm">
+                            <div style="margin-bottom: 20px;">
+                                <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Full
+                                    Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email
+                                    Address</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email"
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 600;">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <label for="message"
+                                    style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
+                                <textarea id="message" name="message" placeholder="How can we help?" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; height: 150px; font-family: inherit; resize: vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn"
+                                style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
+                                Send Message <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
         </section>
-        <section class="map-section" style="padding: 0; margin-top: 40px; margin-bottom: 80px;">
-            <div class="">
+        <section class="map-section" style="padding: 0; margin-top: 40px; margin-bottom: 80px; border-radius: 50px;">
+            <div class="container">
                 <!-- <div class="section-title" style="text-align: left; margin-bottom: 30px;">
                     <h2 style="color: var(--primary-dark); font-size: 1.8rem;">Our Location</h2>
                     <div class="underline" style="margin: 10px 0; width: 60px;"></div>
