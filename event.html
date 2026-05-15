@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery | Kozhikode QA</title> <!-- Title will be updated dynamically -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="page-header"
+            style="background: var(--gray-dark); color: white; padding: 60px 0; text-align: center;">
+            <div class="container">
+                <h1 id="event-title">Loading...</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <span class="separator"><i class="fas fa-chevron-right"></i></span> <a href="gallery.html">Gallery</a> <span class="separator"><i class="fas fa-chevron-right"></i></span> <a href="image-gallery.html">Images</a> <span class="separator"><i class="fas fa-chevron-right"></i></span> <span class="current">Event</span>
+                </div>
+                <p id="event-description" style="color: #ccc; margin-top: 10px;"></p>
+            </div>
+        </section>
+
+        <section class="gallery-detail">
+            <div class="container">
+                <a href="image-gallery.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Gallery</a>
+                <div class="gallery-grid" id="event-gallery-grid">
+                    <!-- Images will be injected here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div id="lightbox-content-wrapper"
+            style="display: flex; justify-content: center; align-items: center; height: 100%;">
+            <!-- Dynamic content (img/video) will be injected here -->
+        </div>
+        <div class="lightbox-caption" id="caption"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div class="lightbox-thumbnails" id="lightbox-thumbnails"></div>
+        <div class="zoom-controls">
+            <button type="button" onclick="zoomOut()" title="Zoom Out"><i class="fas fa-minus"></i></button>
+            <button type="button" onclick="zoomIn()" title="Zoom In"><i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery-data.js"></script>
+    <script src="js/event-handler.js"></script>
+</body>
+
+</html>
