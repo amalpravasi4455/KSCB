@@ -394,14 +394,22 @@ section {
 }
 
 .logo-img {
-    height: 60px;
-    width: auto;
-    object-fit: contain;
+    height: 105px;
+    width: 105px;
+    object-fit: cover;
+    border-radius: 50%;
     flex-shrink: 0;
+    transition: var(--transition);
 }
 
 .footer-logo-img {
-    height: 50px;
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: var(--transition);
+
 }
 
 .logo-icon {

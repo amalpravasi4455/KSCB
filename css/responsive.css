@@ -120,7 +120,10 @@
     }
 
     .logo-img {
-        height: 50px;
+        height: 60px; /* Adjusted for better mobile fit */
+        width: 60px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     .nav-bar {
@@ -337,7 +340,12 @@
 /* Extra small screens */
 @media (max-width: 480px) {
     .logo-text .main-title {
-        font-size: 1rem !important;
+        font-size: 1.1rem !important;
+    }
+
+    .logo-img {
+        height: 50px;
+        width: 50px;
     }
 
     .hero-btns {
