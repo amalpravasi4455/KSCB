@@ -1041,3 +1041,116 @@ section {
         font-size: 1rem;
     }
 }
+
+/* Branch Cards Styles */
+.contact-layout-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.branches-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-branch-container {
+    width: 100%;
+}
+
+.other-branches-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .contact-layout-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .other-branches-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .other-branches-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.branch-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-light);
+}
+
+.branch-card.active {
+    border-color: var(--primary-color);
+    background: #fafafa;
+}
+
+.branch-card::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    font-size: 5rem;
+    color: var(--primary-color);
+    opacity: 0.1;
+    transition: var(--transition);
+}
+
+.branch-card.active::before {
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+.branch-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.branch-card .info-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.branch-card .info-row i {
+    color: var(--primary-color);
+    margin-top: 4px;
+    width: 16px;
+}
+
+.branch-card .phone-link {
+    color: #555;
+    font-weight: 600;
+}
+
+.branch-card .phone-link:hover {
+    color: var(--primary-dark);
+}
